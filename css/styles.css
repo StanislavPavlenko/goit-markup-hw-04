@@ -258,6 +258,33 @@ ul {
   color: var(--minor-color);
 }
 
+.section-features-item::before {
+  display: block;
+  content: "";
+  height: 112px;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--btn-background-color);
+  border-radius: 4px;
+}
+
+.section-features-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.section-features-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.section-features-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.section-features-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+/* 
 .section-features-icon-list {
   display: flex;
   justify-content: center;
@@ -276,6 +303,9 @@ ul {
   align-items: center;
 }
 .section-features-icon {
+} */
+
+.features-icon {
 }
 
 .section-doing {
